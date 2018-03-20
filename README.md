@@ -26,7 +26,7 @@ The code is tested using Tensorflow r1.4 under Ubuntu 16.04 with Python 2.7 and 
 | [20170511-185253](https://drive.google.com/file/d/0B5MzpY9kBtDVOTVnU3NIaUdySFE) | 0.987        | CASIA-WebFace    | [Inception ResNet v1](https://github.com/davidsandberg/facenet/blob/master/src/models/inception_resnet_v1.py) |
 
 ## Modification
-Using caffe version of [MTCNN] (https://github.com/DuinoDu/mtcnn) for face detection and alignment instead of davidsandberg's MTCNN which is based on tensorflow.
+Using caffe version of [MTCNN](https://github.com/DuinoDu/mtcnn) for face detection and alignment instead of davidsandberg's MTCNN which is based on tensorflow.
 
 ## Training data
 The [CASIA-WebFace](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) dataset has been used for training. This training set consists of total of 453 453 images over 10 575 identities after face detection. Some performance improvement has been seen if the dataset has been filtered before training. Some more information about how this was done will come later.
