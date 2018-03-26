@@ -63,12 +63,6 @@ class Recognition:
     def identify(self, image):
         #faces = self.detect.find_faces(image)
         faces=rtd.mtcnn(image)
-        '''
-        for i in faces:
-            print(i.bounding_box)
-        import time
-        time.sleep(2000)
-        '''
         for i, face in enumerate(faces):
             face.embedding = self.encoder.generate_embedding(face)
             face.name = self.identifier.identify(face)
